@@ -40,6 +40,8 @@ namespace api
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            //Leaving swagger also for non DEV env for easier testing.
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "barcode v1"));
 

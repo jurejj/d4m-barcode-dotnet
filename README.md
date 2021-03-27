@@ -1,7 +1,7 @@
 # Barcode microservice
-###Dotnet basic showcase app
+### Dotnet basic showcase app
 
-##Building and running
+## Building and running
 
 Build the application:
 ```bash
@@ -30,21 +30,21 @@ $ docker start
 Swagger is available also in docker
 
 
-##Testing
+## Testing
 
-###Unit tests
+### Unit tests
 
 Run unit tests
 ```bash
 $ dotnet test
 ```
 
-###Swagger
+### Swagger
 Swagger api browsing util is enabled by default on: [https://localhost:5001/swagger/index.html]()
 
 or you can use curl
 
-###CURL
+### CURL
 
 Save a barcode with:
 ```bash

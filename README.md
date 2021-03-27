@@ -40,7 +40,7 @@ $ dotnet test
 ```
 
 ### Swagger
-Swagger api browsing util is enabled by default on: [https://localhost:5001/swagger/index.html]()
+[Swagger](https://swagger.io/) api browsing util is enabled by default on: [https://localhost:5001/swagger/index.html]()
 
 or you can use curl
 

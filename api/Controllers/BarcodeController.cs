@@ -82,7 +82,7 @@ namespace barcode.Controllers
                 .Select(g => new {courier = g.Key, count = g.Count()})
                 .ToDictionary(k => k.courier, i => i.count);
 
-            return result;
+            return  result;
         }
 
         // GET: api/Barcode

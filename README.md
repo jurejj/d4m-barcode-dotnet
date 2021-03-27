@@ -15,21 +15,6 @@ $ dotnet run
 ```
 Application will start on port 5001.
 
-Build the docker image:
-```bash
-$ cd api
-$ dotnet publish -c Release 
-$ docker build -t barcode-image -f Dockerfile .  
-```
-
-Create and start the docker container:
-```bash
-$ docker create -p80:80 -p443:443 --name barcode barcode-image
-$ docker start
-```
-Swagger is available also in docker
-
-
 ## Testing
 
 ### Unit tests
@@ -66,6 +51,21 @@ Get the barcode count by carriers with:
 $ curl -X GET "https://localhost:5001/api/barcode/count-by-carrier" -H  "accept: text/plain"
 ```
 
+## Docker
+
+Build the docker image:
+```bash
+$ cd api
+$ dotnet publish -c Release 
+$ docker build -t barcode-image -f Dockerfile .  
+```
+
+Create and start the docker container:
+```bash
+$ docker create -p80:80 -p443:443 --name barcode barcode-image
+$ docker start
+```
+Swagger is available also in docker
 
 
 

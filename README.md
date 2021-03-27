@@ -1,5 +1,5 @@
 # Barcode microservice
-### Dotnet basic showcase app
+A basic donet showcase app
 
 ## Building and running
 

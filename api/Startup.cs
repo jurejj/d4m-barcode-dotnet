@@ -45,7 +45,8 @@ namespace api
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "barcode v1"));
 
-            app.UseHttpsRedirection();
+            //TODO disabled temporary due to lack of valid certificates
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

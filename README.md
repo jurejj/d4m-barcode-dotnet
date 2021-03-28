@@ -31,24 +31,24 @@ or you can use curl
 
 ### CURL
 
-Save a barcode with:
+Save a barcode
 ```bash
 $ curl -X PUT "https://localhost:5001/api/barcode/{{CODE}}" -H  "accept: text/plain"
 ```
 
-Save multiple barcodes with:
+Save multiple barcodes
 ```bash
 $ curl -X PUT "https://localhost:5001/api/barcode/batch" -H  "accept: text/plain" -H  "Content-Type: application/json" -d "[\"BARCODE1\",\"BARCODE2\",\"BARCODE3\",...]"
 ```
 
-Get the barcode count with:
+Get the barcode count
 ```bash
 $ curl -X GET "https://localhost:5001/api/barcode/count" -H  "accept: text/plain"
 ```
 
-Get the barcode count by carriers with:
+Get the barcode count by courier
 ```bash
-$ curl -X GET "https://localhost:5001/api/barcode/count-by-carrier" -H  "accept: text/plain"
+$ curl -X GET "https://localhost:5001/api/barcode/count-by-courier" -H  "accept: text/plain"
 ```
 
 ## Docker

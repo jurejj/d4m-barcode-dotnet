@@ -28,8 +28,6 @@ namespace barcode.Controllers
         [HttpPut("{code}")]
         public async Task<Barcode> PutBarcode(string code)
         {
-            Console.WriteLine("saving: " + code);
-
             if (!BarcodeExists(code))
             {
                 var barcode = new Barcode();

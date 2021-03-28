@@ -72,7 +72,7 @@ namespace barcode.Controllers
         }
 
         [HttpGet]
-        [Route("count-by-carrier")]
+        [Route("count-by-courier")]
         public async Task<Dictionary<string, int>> GetCountByCarrier()
         {
             var result = _context.Barcodes
